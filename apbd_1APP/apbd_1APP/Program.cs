@@ -11,10 +11,10 @@ class Program
         Console.WriteLine($"Max: {FindMax(numbers)}");
     }
 
-    static double CalculateAverage(int[] numbers)
+    static double CalculateAverage(int[] data)
     {
-        if (numbers.Length == 0) return 0;
-        return numbers.Average();
+        if (data.Length == 0) return 0;
+        return data.Average();
     }
 
     static int FindMax(int[] numbers)
