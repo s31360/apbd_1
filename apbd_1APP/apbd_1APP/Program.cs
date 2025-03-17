@@ -1,3 +1,17 @@
-﻿// See https://aka.ms/new-console-template for more information
+﻿using System;
+using System.Linq;
 
-Console.WriteLine("Hello, World!");
+class Program
+{
+    static void Main()
+    {
+        int[] numbers = { 1, 2, 3, 4, 5 };
+
+        Console.WriteLine($"Max: {FindMax(numbers)}");
+    }
+
+    static int FindMax(int[] numbers)
+    {
+        return numbers.Max();
+    }
+}
